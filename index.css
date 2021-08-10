@@ -1,0 +1,135 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Muli';
+}
+.todo-body{
+  background: linear-gradient(35deg, red, green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px 0;
+}
+.todo-container{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  max-width: 500px;
+  width: 96%;
+  background: #ffffff10;
+  border-radius: 7px;
+  background: #00000041;
+  /* margin: 0 auto; */
+  overflow: hidden;
+}
+.todo-add-area{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 15px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+}
+#add-new-field{
+  flex-grow: 1;
+  width: auto;
+  padding: 8px 10px;
+  outline: none;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 15px;
+}
+#add-new-field::placeholder{
+  color: red;
+  font-weight: 600;
+  font-size: 14px;
+
+}
+#add{
+  padding: 8px 25px;
+  font-weight: 600;
+  background: #0691c9;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  transition: all 400ms;
+}
+#add:hover{
+  background: #006188;
+}
+
+#show-task{
+  padding: 20px 15px;
+  border-bottom: 1px solid #000;
+}
+.task-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #15098556;
+  padding: 8px 10px;
+}
+.task-container:not(:first-child){
+  margin-top: 10px;
+}
+.task-detail{
+  flex-grow: 1;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: capitalize;
+  margin-right: 10px;
+  padding: 2px 3px;
+  cursor: default;
+}
+.task-detail.done{
+  background: #000;
+  cursor: pointer;
+}
+.delete{
+  border: 0;
+  outline: none;
+  padding: 7px 15px;
+  background: darkred;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 300ms;
+}
+.delete:hover{
+  background: #c50505;
+}
+
+.clearall{
+  padding:  10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clearall-btn{
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  background: red;
+  transition: all 400ms;
+}
+.clearall-btn:hover{
+  letter-spacing: 1px;
+}
